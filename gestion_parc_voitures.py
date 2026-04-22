@@ -63,3 +63,10 @@ v3 =Voiture("GHI-78955","mercedes","bleue")
 v4 =Voiture("JKL-10152","ford","grise")
 
 
+
+parc_boreal.entrerVoiture(v1)
+parc_boreal.entrerVoiture(v2)
+parc_boreal.entrerVoiture(v3)
+parc_boreal.entrerVoiture(v4)
+
+
