@@ -24,6 +24,18 @@ class Parc:
             print(f"Impossible d'ajouter la voiture {voiture.matricule}:le parc est deja plein.")
             return   
         
+        presence_vehicule = False
+        for  v in self.listeVoitures:
+            if v.matricule == voiture.matricule:
+                presence_vehicule = True
+                break
+
+        if presence_vehicule :
+            print (f"la voiture {voiture.matricule} est deja danc le parc .")
+        else :
+            self.listeVoitures.append(voiture)
+            print(f"voiture ajoutee avec succes: la voiture {voiture.matricule} est entree dans le parc")
+        
 
     def sortirVoiture(self,voiture):
         retraitVoiture = None
@@ -40,4 +52,9 @@ class Parc:
 
     
     def calculerNbrPlacesLibres(self):
-        return self.capacite -len(self.listeVoitures)       
+        return self.capacite -len(self.listeVoitures)    
+
+
+
+
+
