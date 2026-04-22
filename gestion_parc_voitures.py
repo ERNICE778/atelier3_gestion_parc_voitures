@@ -55,6 +55,6 @@ class Parc:
         return self.capacite -len(self.listeVoitures)    
 
 
-
+parc_boreal = Parc(1,"60 Distillery",3)
 
 
