@@ -36,3 +36,8 @@ class Parc:
             print(f"la voiture {voiture.matricule} est sortie avec success")
         else :
             print (f"la voiture {voiture.matricule} n'est pas presente dans le parc")       
+
+
+    
+    def calculerNbrPlacesLibres(self):
+        return self.capacite -len(self.listeVoitures)       
