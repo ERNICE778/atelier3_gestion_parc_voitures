@@ -57,4 +57,9 @@ class Parc:
 
 parc_boreal = Parc(1,"60 Distillery",3)
 
+v1 =Voiture("ABC-12345","ferrari","verte")
+v2 =Voiture("DEF-45668","tesla","blanc")
+v3 =Voiture("GHI-78955","mercedes","bleue")
+v4 =Voiture("JKL-10152","ford","grise")
+
 
