@@ -8,3 +8,12 @@ class Voiture:
 
     def afficher_informations(self):
         print(f"les caracteristiques de cette voiture sont: matricule :{self.matricule},marque  :{self.marque},couleur: {self.couleur}")
+
+
+
+class Parc:
+    def __init__(self,id,adresse,capacite):
+        self.id=id
+        self.adresse=adresse
+        self.capacite=capacite
+        self.listeVoitures=[]        
