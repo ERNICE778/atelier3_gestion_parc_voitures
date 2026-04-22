@@ -16,4 +16,10 @@ class Parc:
         self.id=id
         self.adresse=adresse
         self.capacite=capacite
-        self.listeVoitures=[]        
+        self.listeVoitures=[]     
+
+
+    def entrerVoiture(self,voiture):
+        if self.calculerNbrPlacesLibres() <=0:
+            print(f"Impossible d'ajouter la voiture {voiture.matricule}:le parc est deja plein.")
+            return   
