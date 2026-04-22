@@ -23,3 +23,16 @@ class Parc:
         if self.calculerNbrPlacesLibres() <=0:
             print(f"Impossible d'ajouter la voiture {voiture.matricule}:le parc est deja plein.")
             return   
+        
+
+    def sortirVoiture(self,voiture):
+        retraitVoiture = None
+        for v in self.listeVoitures:
+            if v.matricule == voiture.matricule:
+                retraitVoiture = v
+                break
+        if retraitVoiture:
+            self.listeVoitures.remove(retraitVoiture)    
+            print(f"la voiture {voiture.matricule} est sortie avec success")
+        else :
+            print (f"la voiture {voiture.matricule} n'est pas presente dans le parc")       
